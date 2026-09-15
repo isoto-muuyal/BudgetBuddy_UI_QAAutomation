@@ -1,24 +1,22 @@
 package com.muuyal.qa.budgetwise_automation.testData;
 
+import com.muuyal.qa.budgetwise_automation.models.User;
+
 public enum UsersEnum {
 
-    VALID_USER("valid_user@muuyal.tech", "mypass"),
-    INVALID_USER("not_valid@muuyal.tech", "password"),
-    WRONG_PASSWORD("valid_user@muuyal.tech", "wrongpassword");
+    VALID_USER( "VALID_USER"),
+    ADMIN_USER("ADMIN_USER"),
+    INVALID_USER( "INVALID_USER"),
+    WRONG_PASSWORD("WRONG_USER");
 
-    private final String username;
-    private final String password;
-
-    UsersEnum(String username, String password) {
-        this.username = username;
-        this.password = password;
+    private final String id;
+    UsersEnum(String id) {
+        this.id = id;
     }
 
-    public String getUsername(){
-        return this.username;
+
+    public String getId(){
+        return this.id;
     }
 
-    public String getPassword(){
-        return this.password;
-    }
 }

@@ -5,9 +5,9 @@ import com.muuyal.qa.budgetwise_automation.components.HeaderMenu;
 import com.muuyal.qa.budgetwise_automation.components.TextField;
 import com.muuyal.qa.budgetwise_automation.models.User;
 import com.muuyal.qa.budgetwise_automation.testData.PagesEnum;
-import com.muuyal.qa.budgetwise_automation.testData.UsersEnum;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
 
 public class LoginPage {
 

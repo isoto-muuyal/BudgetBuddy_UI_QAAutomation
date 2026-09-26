@@ -8,8 +8,8 @@ import org.testng.annotations.BeforeMethod;
 
 public class BaseFreshSessionTest {
 
-    WebDriver driver;
-    Actions actions;
+    protected WebDriver driver;
+    protected Actions actions;
 
     @BeforeMethod
     void setup() {

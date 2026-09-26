@@ -7,15 +7,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class TextField extends BaseComponent{
 
-    private final By locator;
 
     public TextField(WebDriver driver, By locator) {
         super(driver);
-        this.locator = locator;
+        super.function = ExpectedConditions.visibilityOfElementLocated(locator);
     }
 
     private WebElement getElement(){
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        return wait.until(function);
     }
 
     public void sendText(String text){
